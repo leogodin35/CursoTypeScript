@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="MyJavaScriptLibrary.js"></script>
+    <script src="app.js"></script>
+    <script>
+        function btClick() {
+            var myCalcObj = new Module1.Calculator.CalcAreas();
+            var resultArea = myCalcObj.getArea(3);
+            alert("The calculated area is " + resultArea);
+        }
+    </script>
+</head>
+<body>
+    <h1>TypeScript HTML App</h1>
+
+    <div id="content">
+        <button type="button" onclick="btClick()">Calcular</button>
+    </div>
+</body>
+</html>
